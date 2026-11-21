@@ -395,3 +395,87 @@ h2{letter-spacing:-0.01em}
   .facts-row div:first-child{border-top:0}
 }
 .contact-in{align-items:stretch}
+
+/* =========================================================
+   Light theme: bright, clean surfaces; slate for text,
+   green for accents. Overrides the earlier dark surfaces.
+   ========================================================= */
+:root{--tint:#EEF4E6; --green-deep:#5F8A3A}
+/* Top bar + header */
+.topbar{background:var(--bg-alt);color:var(--body-muted);border-bottom:1px solid var(--line)}
+.topbar a{color:var(--slate)}
+.topbar .muted{color:var(--muted)}
+.site-header{background:#fff;border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(49,62,71,.02)}
+.site-header .wm-1{color:var(--slate)}
+.wm-2{color:var(--green-text)}
+.nav a:not(.btn){color:var(--body-muted)}
+.nav a:not(.btn):hover{color:var(--slate);border-bottom-color:var(--green)}
+.nav a[aria-current="page"]{color:var(--slate);border-bottom-color:var(--green)}
+/* Buttons on light */
+.btn-outline{color:var(--slate);border-color:var(--slate);background:transparent}
+.btn-outline:hover{background:var(--slate);color:#fff}
+/* Home hero */
+.hero{background:#F6F8F3;color:var(--slate)}
+.hero h1{color:var(--slate)}
+.hl{color:var(--green-deep);border-bottom-color:var(--green)}
+.hero .lead{color:var(--body-muted)}
+.art-sage{background:#E3EBD9}
+.accred{border-top-color:var(--line)}
+.accred span:not(.muted){color:var(--slate)}
+.accred .muted{color:var(--muted)}
+/* Former dark blocks */
+.section.tint{background:var(--tint)}
+.statement{color:var(--slate)}
+.statement .green{color:var(--green-deep)}
+.approach-steps li{border-bottom-color:#D3DFC6}
+.approach-steps h3{color:var(--slate)}
+.approach-steps p{color:var(--body-muted)}
+.sector-strip{background:#fff;color:var(--slate);border-bottom:1px solid var(--line)}
+.sector-strip li{color:var(--slate)}
+.commercial-strip{background:var(--tint);color:var(--slate)}
+.commercial-strip:hover{color:var(--slate)}
+.strip-title{color:var(--slate)}
+.tile-feature{background:var(--tint);color:var(--slate)}
+.tile-feature:hover{color:var(--slate)}
+.tile-feature .tile-title{color:var(--slate)}
+.tile-feature .tile-text{color:var(--body-muted)}
+.tile-feature .ico{background:var(--slate)}
+.tile-feature .more{color:var(--green-text)}
+.tile-list li{color:var(--slate)}
+.rel.dark{background:var(--green);color:var(--slate)}
+.rel.dark:hover{color:var(--slate)}
+.rel.dark span:last-child{color:var(--slate)}
+.side-card.tint{background:var(--tint);color:var(--slate)}
+.side-card.tint h2{color:var(--slate)}
+.side-card.tint .kv{color:var(--slate)}
+.side-card.tint .kv span{color:var(--muted)}
+.side-card.tint .kv strong{color:var(--slate)}
+.side-card.tint .kv strong.green{color:var(--green-text)}
+/* Footer */
+.site-footer{background:var(--bg-alt);color:var(--body-muted);border-top:1px solid var(--line)}
+.site-footer .wm-1{color:var(--slate)}
+.site-footer .muted{color:var(--muted)}
+.footer-h{color:var(--slate)}
+.site-footer a:not(.btn){color:var(--body-muted)}
+.site-footer a:not(.btn):hover{color:var(--slate)}
+.footer-bottom{border-top-color:#D9DEE0;color:var(--muted)}
+.site-footer .footer-legal a{color:var(--muted)}
+/* Careers */
+.careers{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:24px;align-items:stretch}
+.careers-main{border:1.5px solid var(--line);border-radius:var(--radius);padding:40px;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.careers-main h2{font-size:clamp(26px,2.6vw,34px)}
+.careers-main p{margin:0;max-width:620px}
+.careers-main .btn-row{margin-top:12px}
+.status-pill{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:var(--bg-alt);font-weight:700;font-size:15px}
+.status-pill .dot{width:10px;height:10px;border-radius:999px;background:#C4CBCE}
+@media (max-width:900px){.careers{grid-template-columns:1fr}}
+@media (max-width:640px){
+  .careers-main{padding:28px}
+  .nav a:not(.btn){font-size:16px;padding:14px 2px}
+}
+@media (max-width:640px){
+  .nav{border-top-color:var(--line);justify-content:space-between}
+  .nav a:not(.btn){flex:0 1 auto;font-size:15.5px;padding:14px 4px}
+  .careers{gap:16px}
+}
+@media (max-width:360px){.nav a:not(.btn){font-size:14.5px}}
