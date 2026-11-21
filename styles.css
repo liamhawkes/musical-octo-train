@@ -479,3 +479,4 @@ h2{letter-spacing:-0.01em}
   .careers{gap:16px}
 }
 @media (max-width:360px){.nav a:not(.btn){font-size:14.5px}}
+.site-footer .footer-legal a.footer-careers{color:var(--slate);font-weight:700}
