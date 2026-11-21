@@ -350,3 +350,21 @@ h2{font-size:clamp(28px,3.2vw,42px)}
   .svc-card{padding:20px 22px;gap:6px}
   .sector-strip li{font-size:16px;white-space:nowrap}
 }
+
+/* ---- Light page header for inner pages (hero is home-only) ---- */
+.page-head{background:#fff;border-bottom:1px solid var(--line)}
+.page-head .wrap{padding-top:32px;padding-bottom:48px}
+.page-head .crumbs{color:var(--muted);margin-bottom:28px}
+.page-head .crumbs a{color:var(--muted)}
+.page-head .crumbs [aria-current]{color:var(--slate)}
+.page-head h1{font-size:clamp(34px,4vw,52px);line-height:1.1;color:var(--slate)}
+.page-head .lead{color:var(--body-muted);margin-top:16px;font-size:19px;max-width:680px}
+.head-split{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:48px;align-items:center}
+.page-head .facts{background:var(--bg-alt)}
+.page-head .facts div{border-bottom-color:var(--line)}
+.page-head .facts dt{color:var(--green-text)}
+.page-head .facts dd{color:var(--slate)}
+.contact-body{padding-top:48px}
+.contact-in{margin-top:0}
+@media (max-width:900px){.head-split{grid-template-columns:1fr;gap:28px}}
+@media (max-width:640px){.page-head .wrap{padding-top:24px;padding-bottom:36px}.page-head .lead{font-size:18px}}
