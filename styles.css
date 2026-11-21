@@ -1,3 +1,10 @@
+/* Self-hosted fonts (SIL Open Font License – see fonts/*-OFL.txt) */
+@font-face{font-family:Karla;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/karla-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Karla;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/karla-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:Karla;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/karla-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:Karla;font-style:normal;font-weight:700;font-display:swap;src:url(fonts/karla-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Jost;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/jost-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:Jost;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/jost-latin-600-normal.woff2) format("woff2")}
 /* Hawkes Electrical Services – site styles */
 :root{
   --slate:#313E47; --slate-deep:#283239; --slate-2:#3A4852; --line-dark:#46535C;
@@ -460,3 +467,17 @@ h2{letter-spacing:-0.01em}
 .hero .btn-outline:hover,.site-footer .btn-outline:hover{background:var(--green);color:var(--slate)}
 .site-footer .footer-legal a.footer-careers{color:#fff;font-weight:700}
 @media (max-width:640px){.nav{justify-content:space-between}}
+
+/* ---- Legal pages, form extras ---- */
+.prose{max-width:760px;color:var(--body-muted)}
+.prose h2{font-size:26px;margin:40px 0 12px;color:var(--slate)}
+.prose h2:first-of-type{margin-top:8px}
+.prose p,.prose ul{margin:0 0 14px}
+.prose ul{padding-left:22px}
+.prose li{margin-bottom:6px}
+.prose a{color:var(--green-text);font-weight:600}
+.updated{font-size:14px;color:var(--muted)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.form-note{margin:0;font-size:14px;color:var(--muted);text-align:center}
+.form-note a{color:var(--green-text);font-weight:600}
+.page-head .btn-row{margin-top:28px}
