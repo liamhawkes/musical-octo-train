@@ -481,3 +481,35 @@ h2{letter-spacing:-0.01em}
 .form-note{margin:0;font-size:14px;color:var(--muted);text-align:center}
 .form-note a{color:var(--green-text);font-weight:600}
 .page-head .btn-row{margin-top:28px}
+
+/* ---- Round 2: mobile bar, FAQs, callback ---- */
+.mobile-bar{display:none}
+@media (max-width:640px){
+  .mobile-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(49,62,71,.97);border-top:1px solid #46535C}
+  .mobile-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;letter-spacing:.02em}
+  .mb-call{background:#7AA04B;color:#313E47}
+  .mb-quote{background:#fff;color:#313E47}
+  .mb-wa{background:#3A4852;color:#fff;border:1.5px solid #56636C}
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  .site-header .header-call{display:none}
+}
+.faq-page{display:grid;grid-template-columns:220px minmax(0,1fr);gap:56px;align-items:start}
+.faq-toc{position:sticky;top:24px;display:flex;flex-direction:column;gap:6px}
+.faq-toc span{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--green-text);margin-bottom:6px}
+.faq-toc a{text-decoration:none;font-weight:600;padding:8px 14px;border-radius:var(--radius-sm);color:var(--slate)}
+.faq-toc a:hover{background:var(--bg-alt)}
+.faq-group + .faq-group{margin-top:48px}
+.faq-group h2{font-size:28px;margin-bottom:16px;scroll-margin-top:24px}
+.page-head .lead a{color:var(--green-text);font-weight:700}
+.callback{display:flex;flex-direction:column;gap:14px}
+.callback label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:15px}
+.callback input:not(.hp),.callback select{font:inherit;font-weight:400;height:48px;padding:0 14px;border:1.5px solid #C4CBCE;border-radius:12px;background:#fff;color:var(--slate)}
+.wa-card .btn{align-self:flex-start}
+@media (max-width:900px){.faq-page{grid-template-columns:1fr;gap:24px}.faq-toc{position:static;flex-direction:row;flex-wrap:wrap}.faq-toc span{width:100%}}
+.contact-in{align-items:flex-start}
+.contact-main{flex:1 1 560px;min-width:0;display:flex;flex-direction:column;gap:16px}
+.contact-main .form{flex:none}
+@media (max-width:900px){
+  .faq-toc{gap:8px}
+  .faq-toc a{background:var(--bg-alt);border-radius:999px;padding:8px 16px;font-size:15px}
+}
